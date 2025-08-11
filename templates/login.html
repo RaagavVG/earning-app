@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Featherfield</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div>
+            <h1 style="text-align: center;">Login</h1>
+            <form method="POST" action="#">
+                <table>
+                    <tr><td>Phone:</td><td><input type="number" size="10" name="phone"></td></tr>
+                    <tr><td>Password:</td><td><input type="password" name="password"></td></tr>
+                    <tr><td colspan="2" style="text-align: center;"><input type="submit" value="Login"></td></tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div style="position: absolute; top: 20px; right: 30px;">
+         <a href="{{ url_for('register') }}">Register</a>
+    </div>
+    <div style="position: absolute; top: 20px; left: 30px;">
+        <a href="{{ url_for('index') }}">Back</a>
+    </div>    
+</body>
+</html>

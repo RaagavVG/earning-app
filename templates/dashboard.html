@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome, {{ name }}</h1>
+
+    <div class="profile-box" style="position: absolute; top: 20px; right: 20px; width: 220px;">
+        <h2>My Profile</h2>
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p><strong>Phone:</strong> {{ phone }}</p>
+        <p><strong>Current Plan:</strong> {{ plan }}</p>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+
+</body>
+</html>

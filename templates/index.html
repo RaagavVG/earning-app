@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Featherfield</title>
+    <link rel="icon" href="{{ url_for('static', filename='vg.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <link rel="icon" href="background.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <center>
+        <h1 class="one">Welcome To Our Page</h1>
+        <h2>Earn Money by Watching Videos...</h2>
+        <a href="{{ url_for('index') }}">Home Page</a> |
+        <a href="{{ url_for('register') }}">Register</a> |
+        <a href="{{ url_for('login') }}">Login</a>
+    </center>
+    
+    <br>
+
+    <center>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/oagaj4Glskw?si=BQF_9EU9k1FZqll8" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+    </center>    
+     
+
+    
+
+    <div class="container">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>Featherfield is a platform where you can earn money by watching videos. We provide a variety of content that you can enjoy while earning rewards.</p>
+            <h3>How It Works</h3>
+            <p>Simply register, log in, and start watching videos. Each video you watch earns you cash that can be withdrawal via UPI.</p>
+            <h3>Join Us Today!</h3>
+            <p>Sign up now and start earning while enjoying your favorite videos!</p>
+        </div>
+
+        </body>
+</html>

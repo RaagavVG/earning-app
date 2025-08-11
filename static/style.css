@@ -1,0 +1,26 @@
+body {
+    background-color: #f5f6fa;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #e8e2e2;
+
+}
+h1, h2 {
+    color: #7fd3f4;
+}
+table {
+    border-spacing: 10px;
+}
+input, select {
+    padding: 5px;
+}
+a {
+    margin: 0 10px;
+    color: #d50a0a;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
